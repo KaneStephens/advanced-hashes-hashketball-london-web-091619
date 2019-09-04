@@ -1,7 +1,7 @@
 require "pry"
 
 def game_hash
-  final_hash = {
+   {
     :home => {
       :team_name => "Brooklyn Nets",
       :colors => ["Black", "White"],
@@ -107,8 +107,7 @@ def game_hash
     }
     
   }
-  
-  return final_hash
+
 end
 
 def num_points_scored(name_of_player)
