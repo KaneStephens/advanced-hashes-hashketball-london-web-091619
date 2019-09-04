@@ -113,7 +113,7 @@ end
 
 def num_points_scored(name_of_player)
   
-    print(game_hash)
+    print(game_hash.keys)
       
 
 end
