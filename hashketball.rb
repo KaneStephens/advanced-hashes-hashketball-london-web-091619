@@ -137,7 +137,9 @@ end
 def team_colors(team)
   
   game_hash.each { |team, info|
-    print(info[:team_name])
+    looking_for = info[:team_name]
+    print(looking_for)
+    print(team)
     
     
   #  info[:colors].join(', ')
