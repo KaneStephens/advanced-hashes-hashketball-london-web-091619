@@ -111,11 +111,9 @@ def game_hash
   return final_hash
 end
 
-print(game_hash)
-
-
 def num_points_scored(name_of_player)
   
+  game_hash.each_key
 end
   
   
