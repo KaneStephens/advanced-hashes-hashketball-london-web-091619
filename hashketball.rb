@@ -114,6 +114,7 @@ def num_points_scored(name_of_player)
   
   game_hash.each { |key, value|
     print(value)
+  }
   
 end
   
