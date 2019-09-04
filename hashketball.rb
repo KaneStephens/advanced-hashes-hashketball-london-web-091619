@@ -117,7 +117,7 @@ def num_points_scored(name_of_player)
     search_spot = game_hash[team][:players]
     
     game_hash[team][:players].each { |a|
-      print(search_spot[0][:player_name])
+      print(search_spot[a][:player_name])
       
       
     }
