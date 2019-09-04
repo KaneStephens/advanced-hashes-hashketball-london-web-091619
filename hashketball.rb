@@ -206,8 +206,19 @@ end
 
 def most_points_scored
   
+  highest_scorer = ""
+  highest_scorer_points = 0
   
+  game_hash.each { |team, info|
+    info[:players].each { |player|
+      if player[:points] > highest_scorer_points then
+        highest_scorer_points = player[:player_name]
+        highest_scorer_points = player[:points]
+      end 
+    }
+  }
   
+  return highest_scorer
 end 
 
 
