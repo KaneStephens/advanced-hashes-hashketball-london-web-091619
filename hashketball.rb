@@ -138,7 +138,7 @@ def team_colors(input_team)
   join_phrase = 
   game_hash.each { |team, info|
     if info[:team_name] == input_team then
-      return info[:colors].join("/", "")
+      return info[:colors]
     end
   }
   
