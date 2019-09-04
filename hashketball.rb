@@ -149,7 +149,7 @@ def team_names
   teams_array = []
   
   game_hash.each { |team, info|
-       info[:team_name]
+       print(info[:team_name])
   }
   
 end
