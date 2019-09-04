@@ -118,8 +118,6 @@ def num_points_scored(name_of_player)
     
     print(search_spot[0][:player_name])
       
-      
-    }
   }  
 end
   
