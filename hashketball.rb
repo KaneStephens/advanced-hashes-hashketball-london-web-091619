@@ -148,7 +148,6 @@ def team_names
   
   game_hash.each { |team, info|
       return info[:team_name]
-    end
   }
   
 end
