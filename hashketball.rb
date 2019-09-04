@@ -168,12 +168,12 @@ def player_numbers(input_team)
   return team_numbers_array
 end 
 
-def player_stats(player_name)
+def player_stats(input_player)
   
     game_hash.each { |team, info|
     info[:players].each { |player|
-      if player[:player_name] == player_name then
-        return  player.select! {|keys, values| keys != player_name} 
+      if player[:player_name] == input_player then
+        return  player.select {|keys, values| keys != player_name} 
       end
     }
   }
