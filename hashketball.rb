@@ -117,10 +117,7 @@ def num_points_scored(name_of_player)
     search_spot = game_hash[team][:players]
     search_spot.each { |player_hash|
       print(search_spot[player_hash])
-      if search_spot[player_hash][player_name] ==
-        name_of_player then
-        return search_spot[player_hash][points]
-      end
+      
     }
   }  
 end
