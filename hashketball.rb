@@ -259,7 +259,8 @@ end
 def long_name_steals_a_ton?
   
   long_name_top_stealer = false
-  
+  the_long_name = player_with_longest_name
+  print(player_with_longest_name)
   
   
 end
