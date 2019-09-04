@@ -116,9 +116,9 @@ def num_points_scored(name_of_player)
   game_hash.each_key {|team|
     search_spot = game_hash[team][:players]
     
-    search_spot.map { |player_hash|
-      the_key = search_spot[player_hash]
-      print(the_key)
+    search_spot.each[player_name] { |hopefully_name|
+      
+      print(hopefully_name)
       
     }
   }  
