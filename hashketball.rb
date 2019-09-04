@@ -111,10 +111,7 @@ def game_hash
 end
 
 def num_points_scored(name_of_player)
-    
-    game_hash.each { |team|
-      return game_hash[team][:players]
-    }
+  
 end
   
   
