@@ -223,8 +223,22 @@ end
 
 def winning_team
   
+  the_winner = ""
+  the_winner_points = 0
   
+  game_hash.each { |team, info|
+    info[:players].each { |player|
+      total = 0 
+      total += player[:points]
+      
+      if total > the_winner_points then
+        the_winner = info[:team_name]
+        the_winner_points = total
+      end 
+    }
+  }  
   
+  return the_winner
 end 
 
 
