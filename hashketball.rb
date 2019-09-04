@@ -264,7 +264,7 @@ def long_name_steals_a_ton?
   
   game_hash.each { |team, info|
     info[:players].each { |player|
-      if player[:player_name].length > longest_name.length then
+      if player[:player_name].length > the_long_name.length then
         the_long_name = player[:player_name]
         if player[:steals] > the_most_steals then
           the_most_steals = player[:steals]
