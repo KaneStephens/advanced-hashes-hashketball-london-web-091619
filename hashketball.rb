@@ -146,8 +146,10 @@ end
 
 def team_names
   
+  teams_array = []
+  
   game_hash.each { |team, info|
-      return info[:team_name]
+       info[:team_name]
   }
   
 end
