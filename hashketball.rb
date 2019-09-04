@@ -259,10 +259,24 @@ end
 def long_name_steals_a_ton?
   
   long_name_top_stealer = false
-  the_long_name = player_with_longest_name
-  print(the_long_name)
+  the_long_name = ""
+  the_most_steals = 0
   
+  game_hash.each { |team, info|
+    info[:players].each { |player|
+      if player[:player_name].length > longest_name.length then
+        the_long_name = player[:player_name]
+        if player[:steals] > the_most_steals then
+          the_most_steals = player[:steals]
+          long_name_top_stealer = true
+        else 
+          long_name_top_stealer = false
+        end
+      end 
+    }
+  }
   
+  return long_name_top_stealer
 end
 
 
