@@ -113,10 +113,10 @@ end
 
 def num_points_scored(name_of_player)
   
-    game_hash.each { |team|
-    print(game_hash[team])
+    
+    print(game_hash[0, 1])
       
-    }
+    
     
 end
   
