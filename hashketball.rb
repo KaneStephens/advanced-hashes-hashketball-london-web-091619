@@ -258,6 +258,8 @@ end
 
 def long_name_steals_a_ton?
   
+  long_name_top_stealer = false
+  
   
   
 end
