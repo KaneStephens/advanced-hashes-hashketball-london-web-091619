@@ -149,9 +149,9 @@ def team_names
   teams_array = []
   
   game_hash.each { |team, info|
-       print(info[:team_name])
+       teams_array,push(info[:team_name])
   }
-  
+  return teams_array
 end
 
 
