@@ -173,7 +173,8 @@ def player_stats(player_name)
     game_hash.each { |team, info|
     info[:players].each { |player|
       if player[:player_name] == player_name then
-        return 
+        their_stats = player.select {|keys, values| values >= 0}
+        return their_stats
       end
     }
   }
