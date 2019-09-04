@@ -223,11 +223,11 @@ end
 
 def winning_team
   
-  total = 0 
   the_winner = ""
   the_winner_points = 0
   
   game_hash.each { |team, info|
+    total = 0 
     info[:players].each { |player|
       total += player[:points]
       
