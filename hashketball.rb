@@ -117,7 +117,7 @@ def num_points_scored(name_of_player)
     print(game_hash[key])
     print(game_hash[:home][:players][0][:player_name])
       
-  
+    }
     
 end
   
