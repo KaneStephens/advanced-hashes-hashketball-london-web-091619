@@ -113,7 +113,8 @@ end
 
 def num_points_scored(name_of_player)
   
-    print(game_hash.keys)
+    game_hash.each { |team|
+    print(game_hash)
       
 
 end
