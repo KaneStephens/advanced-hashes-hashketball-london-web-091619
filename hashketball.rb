@@ -194,10 +194,10 @@ def big_shoe_rebounds
     }
   }
   
-    game_hash.each { |team, info|
+  game_hash.each { |team, info|
     info[:players].each { |player|
-      if player[:player_name] == name_of_player then
-        return player[:shoe]
+      if player[:player_name] == shoe_owner then
+        return player[:rebounds]
       end
     }
   }
