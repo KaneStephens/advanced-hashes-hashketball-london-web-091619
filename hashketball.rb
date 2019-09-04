@@ -137,7 +137,9 @@ end
 def team_colors(team)
   
   game_hash.each { |team, info|
-    print(info[:team_name])
+    if (info[:team_name] == team then
+      print("ooft cuz")
+    end
   }
   
 end
