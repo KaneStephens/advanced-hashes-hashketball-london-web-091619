@@ -111,12 +111,8 @@ def game_hash
 end
 
 def num_points_scored(name_of_player)
-    rename_me = game_hash
-    rename_me.each { |key|
     
-    print(rename_me[key][:players][0][:player_name])
-      
-    }
+    
     
 end
   
