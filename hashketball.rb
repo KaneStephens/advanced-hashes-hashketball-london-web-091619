@@ -154,5 +154,23 @@ def team_names
   return teams_array
 end
 
+def player_numbers(input_team)
+  
+  team_numbers_array = []
+  game_hash.each { |team, info|
+    if info[:team_name] == input_team then
+      info[:players].each { |player|
+        team_numbers_array.push(player[:number])
+      }
+    end   
+  }
+  
+  return team_numbers_array
+end 
+
+
+
+
+
 
 
